@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# Script displays 4 then badluck china,9 badluck japan and 17 backluck italy
+count=1
+while [ $count -le 20 ]
+do
+  echo "$count"
+  case $count in
+    4)
+      echo "bad luck from China";;
+    9)
+      echo "bad luck from Japan";;
+    17)
+      echo "bad luck from Italy";;
+  esac
+  ((count++))
+done
